@@ -60,6 +60,7 @@ Use the following command to pull the latest csvserver image:
 
 ```shell
 docker pull infracloudio/csvserver:latest
+```
 
 Step 2: Write a Script gencsv.sh
 Create a script named gencsv.sh to generate the required CSV file:
@@ -73,7 +74,7 @@ Run the script:
 bash
 ```shell
 ./gencsv.sh 0 10
-
+```
 Step 3: Run the Container
 Run the container with the following command:
 
@@ -83,6 +84,7 @@ docker run -d -p 9393:9393 \
   -e CSVSERVER_BORDER=Orange \
   -v $(pwd)/inputFile:/inputFile \
   infracloudio/csvserver:latest
+```
 <div align="center"> <h2 id="task-2-docker-compose-setup">🛠 Task 2: Docker Compose Setup</h2> </div>
 Step 1: Create a docker-compose.yml
 Define a docker-compose.yml file to simplify running the container:
@@ -100,18 +102,16 @@ services:
       CSVSERVER_BORDER: Orange
     volumes:
       - ./inputFile:/inputFile
+```
 Step 2: Start the Service
 Run the following command to start the container:
-
-bash
-Copy code
+```shell
 docker-compose up -d
+```
 <div align="center"> <h2 id="task-3-adding-prometheus">📊 Task 3: Adding Prometheus</h2> </div>
 Step 1: Add Prometheus to docker-compose.yml
 Extend the docker-compose.yml file to include Prometheus:
 
-yaml
-Copy code
 ```shell
 services:
   csvserver:
@@ -129,10 +129,10 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
+```
 Step 2: Configure Prometheus
 Create a prometheus.yml configuration file:
 
-yaml
 ```shell
 global:
   scrape_interval: 15s
@@ -141,6 +141,7 @@ scrape_configs:
   - job_name: "csvserver"
     static_configs:
       - targets: ["csvserver:9393"]
+```
 <div align="center"> <h2 id="outputs">📤 Outputs</h2> </div>
 After completing all the steps:
 
