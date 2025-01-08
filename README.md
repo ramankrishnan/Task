@@ -7,7 +7,7 @@ Automating and simplifying containerized application deployment with Docker and 
 </p>
 
 <img src="https://img.icons8.com/color/96/docker.png" alt="Docker Logo" height="96">
-<img src="https://img.icons8.com/color/96/prometheus.png" alt="Prometheus Logo" height="96">
+<img src="https://github.com/ramankrishnan/Task/blob/main/prometheus.png" alt="Prometheus Logo" height="96">
 <img src="https://img.icons8.com/color/96/github.png" alt="GitHub Logo" height="96">
 
 </div>
