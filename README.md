@@ -152,7 +152,9 @@ After completing all the steps:
 Access the CSVServer application at http://localhost:9393.
 Access Prometheus metrics at http://localhost:9090.
 <img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(109).png" alt="Output3">
-<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(110).png" alt="Output3">
+
 <div align="center"> <h2 id="contributors">🤝 Contributors</h2> </div>
 Raman Krishnan
+
+
 Feel free to use and contribute to this repository!
