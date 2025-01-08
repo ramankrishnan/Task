@@ -49,5 +49,5 @@ Before you begin, ensure you have:
 - Cloned this repository:
   
 ```shell
-git clone https://github.com/ramankrishnan/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/ramankrishnan/Task.git
+cd Task
