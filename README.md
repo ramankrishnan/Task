@@ -28,9 +28,5 @@
        
 ```shell
 docker run -d -p 9393:9393 -e CSVSERVER_BORDER=Orange -v $(pwd)/inputFile:/inputFile infracloudio/csvserver:latest
-      </div>
-    </li>
-  </ol>
 
- 
 
