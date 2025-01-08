@@ -86,7 +86,7 @@ docker run -d -p 9393:9393 \
   infracloudio/csvserver:latest
 ```
 <img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(107).png" alt="Output1">
-<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(108).png" alt="Output2">
+
 <div align="center"> <h2 id="task-2-docker-compose-setup">🛠 Task 2: Docker Compose Setup</h2> </div>
 Step 1: Create a docker-compose.yml
 Define a docker-compose.yml file to simplify running the container:
@@ -110,6 +110,7 @@ Run the following command to start the container:
 ```shell
 docker-compose up -d
 ```
+<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(108).png" alt="Output2">
 <div align="center"> <h2 id="task-3-adding-prometheus">📊 Task 3: Adding Prometheus</h2> </div>
 Step 1: Add Prometheus to docker-compose.yml
 Extend the docker-compose.yml file to include Prometheus:
@@ -147,8 +148,11 @@ scrape_configs:
 <div align="center"> <h2 id="outputs">📤 Outputs</h2> </div>
 After completing all the steps:
 
+
 Access the CSVServer application at http://localhost:9393.
 Access Prometheus metrics at http://localhost:9090.
+<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(109).png" alt="Output3">
+<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(110).png" alt="Output3">
 <div align="center"> <h2 id="contributors">🤝 Contributors</h2> </div>
 Raman Krishnan
 Feel free to use and contribute to this repository!
