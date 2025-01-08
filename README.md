@@ -48,22 +48,9 @@ Before you begin, ensure you have:
 - Installed **Docker** and **Docker Compose** on your system.
 - Cloned this repository:
 
-```shell
+
+```bash
 git clone https://github.com/ramankrishnan/your-repo-name.git
 cd your-repo-name
-
-#<div align="center"> <h2 id="task-1-running-the-container">🔥 Task 1: Running the Container</h2> </div>
-
-
-#Step 2: Write a script named gencsv.sh
-```shell
-./gencsv.sh 0 10
-
-
-
-
-#Step 3: Run the container
-```shell
-docker run -d -p 9393:9393 -e CSVSERVER_BORDER=Orange -v $(pwd)/inputFile:/inputFile infracloudio/csvserver:latest
 
 
