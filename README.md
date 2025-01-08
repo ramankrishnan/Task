@@ -25,8 +25,9 @@
     <li>Write a bash script to generate the input file.</li>
     <li>Run the container using:
       <div style="background: #272c34; color: #ffffff; padding: 10px; border-radius: 5px; margin-top: 10px; font-family: monospace;">
-        <code>docker run -d -p 9393:9393 -e CSVSERVER_BORDER=Orange -v $(pwd)/inputFile:/inputFile infracloudio/csvserver:latest</code>
-        <button onclick="copyCode(this)" style="float: right; background: #0078d7; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Copy</button>
+       
+```shell
+docker run -d -p 9393:9393 -e CSVSERVER_BORDER=Orange -v $(pwd)/inputFile:/inputFile infracloudio/csvserver:latest
       </div>
     </li>
   </ol>
