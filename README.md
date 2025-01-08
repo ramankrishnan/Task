@@ -50,15 +50,17 @@ Before you begin, ensure you have:
 
 ```shell
 git clone https://github.com/ramankrishnan/your-repo-name.git
-cd your-repo-name```
+cd your-repo-name
 
 #<div align="center"> <h2 id="task-1-running-the-container">🔥 Task 1: Running the Container</h2> </div>
-#Step 1: Pull the container image
-```shell
-docker pull infracloudio/csvserver:latest```
+
+
 #Step 2: Write a script named gencsv.sh
 ```shell
 ./gencsv.sh 0 10
+
+
+
 
 #Step 3: Run the container
 ```shell
