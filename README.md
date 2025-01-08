@@ -86,6 +86,7 @@ docker run -d -p 9393:9393 \
   infracloudio/csvserver:latest
 ```
 <img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(107).png" alt="Output1">
+<img src="https://github.com/ramankrishnan/Task/blob/main/Screenshot%20(108).png" alt="Output2">
 <div align="center"> <h2 id="task-2-docker-compose-setup">🛠 Task 2: Docker Compose Setup</h2> </div>
 Step 1: Create a docker-compose.yml
 Define a docker-compose.yml file to simplify running the container:
