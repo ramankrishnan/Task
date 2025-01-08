@@ -52,33 +52,33 @@ Before you begin, ensure you have:
 - Installed **Docker** and **Docker Compose** on your system.
 - Cloned this repository:
   ```bash
-  git clone https://github.com/ramankrishnan/your-repo-name.git
-  cd your-repo-name
+  git clone https://github.com/ramankrishnan/Task.git
+  cd Task
 <div align="center"> <h2 id="task-1-running-the-container">🔥 Task 1: Running the Container</h2> </div>
 Step 1: Pull the Container Image
 Use the following command to pull the latest csvserver image:
 
-bash
-Copy code
+```shell
 docker pull infracloudio/csvserver:latest
+
 Step 2: Write a Script gencsv.sh
 Create a script named gencsv.sh to generate the required CSV file:
 
-bash
-Copy code
+```shell
 #!/bin/bash
 # gencsv.sh
 seq $1 $2 > inputFile
 Run the script:
 
 bash
-Copy code
+```shell
 ./gencsv.sh 0 10
+
 Step 3: Run the Container
 Run the container with the following command:
 
 bash
-Copy code
+```shell
 docker run -d -p 9393:9393 \
   -e CSVSERVER_BORDER=Orange \
   -v $(pwd)/inputFile:/inputFile \
@@ -89,6 +89,7 @@ Define a docker-compose.yml file to simplify running the container:
 
 yaml
 Copy code
+```shell
 version: "3.8"
 services:
   csvserver:
@@ -111,6 +112,7 @@ Extend the docker-compose.yml file to include Prometheus:
 
 yaml
 Copy code
+```shell
 services:
   csvserver:
     image: infracloudio/csvserver:latest
@@ -131,7 +133,7 @@ Step 2: Configure Prometheus
 Create a prometheus.yml configuration file:
 
 yaml
-Copy code
+```shell
 global:
   scrape_interval: 15s
 
