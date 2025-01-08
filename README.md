@@ -7,7 +7,7 @@ Automating and simplifying containerized application deployment with Docker and 
 </p>
 
 <img src="https://img.icons8.com/color/96/docker.png" alt="Docker Logo" height="96">
-<img src="https://github.com/ramankrishnan/Task/blob/main/prometheus.png" alt="Prometheus Logo" height="96">
+<img src="https://img.icons8.com/color/96/prometheus.png" alt="Prometheus Logo" height="96">
 <img src="https://img.icons8.com/color/96/github.png" alt="GitHub Logo" height="96">
 
 </div>
@@ -47,7 +47,21 @@ Before you begin, ensure you have:
 
 - Installed **Docker** and **Docker Compose** on your system.
 - Cloned this repository:
-  
+
 ```shell
-git clone https://github.com/ramankrishnan/Task.git
-cd Task
+git clone https://github.com/ramankrishnan/your-repo-name.git
+cd your-repo-name
+
+<div align="center"> <h2 id="task-1-running-the-container">🔥 Task 1: Running the Container</h2> </div>
+Step 1: Pull the container image
+```shell
+docker pull infracloudio/csvserver:latest
+Step 2: Write a script named gencsv.sh
+```shell
+./gencsv.sh 0 10
+
+Step 3: Run the container
+```shell
+docker run -d -p 9393:9393 -e CSVSERVER_BORDER=Orange -v $(pwd)/inputFile:/inputFile infracloudio/csvserver:latest
+
+
